@@ -1,6 +1,6 @@
 
 ```
-This is the basic project of C#, SPecflow and NUnit. I have tried to build a framework based on Page Object Model.
+This is the basic project of C#, SPecflow and NUnit. I have tried to build a framework based on Page Object Model
 ```
 ## Technology Used
 ```
@@ -10,7 +10,16 @@ This is the basic project of C#, SPecflow and NUnit. I have tried to build a fra
   4. Visual Studio
 ```
 
+
 ## Detailed explanation on Automation Framework
+## How To Run
+```
+1.Go to Build option at top navigation bar and Build Framwork
+2. After Successful build, Go to Test optin at top naivigation bar
+3. Select Test Explorer
+4. To Run all tests, select the first icon on left on Test Explorer window
+5. To RUn single feature file, Select the feature file first and the select the second icon on Test Explorer window
+```
 
 ### Framework type: Page Object Model flavored with Specflow
 ```
@@ -24,7 +33,7 @@ Contains locators of objects involved in pages of website
 ```
 ```
 Hooks:-
-This package has all the hooks.
+This package has all the hooks
 ```
 ```
 stepDefinitions:-
@@ -32,7 +41,7 @@ This package has all the step definitions. Currently have single step def file c
 ```
 ```
 features:-
-This package has all .feature files which represents different test scenarios written in Gherkin Language(plain english).
+This package has all .feature files which represents different test scenarios written in Gherkin Language(plain english)
 ```
 ```
 drivers:-

@@ -1,4 +1,5 @@
 ﻿
+using BaseFramework.Pages;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
@@ -7,18 +8,31 @@ namespace BaseFramework.Drivers
 {
     public class SeleniumWebdriver
     {
+        public static IWebDriver driver;
+        public HomePage homePage ;
+        public PersonalDetails personalDetails ;
+        public SelectCountry selectCountry;
+        public ProfessionalDetails professionalDetails;
         public SeleniumWebdriver()
         {
+
+        }
+        public void Setup()
+        {
+            driver = new ChromeDriver(@".\Drivers\");
+            this.initClasses();
         }
 
-        IWebDriver driver = new ChromeDriver(@"C:\Users\harshit jain\Desktop\C#\cSharp-specflow-test-framework\Drivers\");
-        public IWebDriver Setup()
+        public void initClasses()
         {
-            return driver;
+            personalDetails = new PersonalDetails(driver);
+            homePage = new HomePage(driver);
+            selectCountry = new SelectCountry(driver);
+            professionalDetails = new ProfessionalDetails(driver);
+
         }
         public  void QuitBrowser()
         {
-           
             driver.Quit();
         }
     }
