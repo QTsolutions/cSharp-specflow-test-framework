@@ -14,11 +14,15 @@ This is the basic project of C#, SPecflow and NUnit. I have tried to build a fra
 ## Detailed explanation on Automation Framework
 ## How To Run
 ```
+Using Visual Studio
 1.Go to Build option at top navigation bar and Build Framwork
 2. After Successful build, Go to Test optin at top naivigation bar
 3. Select Test Explorer
 4. To Run all tests, select the first icon on left on Test Explorer window
-5. To RUn single feature file, Select the feature file first and the select the second icon on Test Explorer window
+5. To Run single feature file, Select the feature file first and the select the second icon on Test Explorer window
+
+Using Termianl
+ dotnet test
 ```
 
 ### Framework type: Page Object Model flavored with Specflow
